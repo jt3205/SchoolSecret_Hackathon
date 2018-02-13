@@ -1,0 +1,46 @@
+<Page ux:Class="Add">
+	<Router ux:Dependency="router" />
+	<JavaScript File="..\controller\Add.js" />
+	<ClientPanel>
+		<Rectangle Height="7%" Alignment="Top" Color="#0B614B">
+			<Text Alignment="Center" Value="Secret Open★" Color="#ffffff" FontSize="17">
+				<Shadow Size="20" />
+			</Text>
+			<Shadow />
+		</Rectangle>
+		<Text Value="비밀 입력" Alignment="TopLeft" Color="#000000" Margin="35, 85, 0, 0" FontSize="22" />
+		<Rectangle Width="85%" Height="60%">
+			<TextInput TextAlignment="Center" PlaceholderText="입력" TextColor="#000" />
+			<Stroke Width="3" Color="#0B614B" />
+		</Rectangle>
+		<Rectangle Color="#0B614B" Width="23%" Height="40" CornerRadius="15" Alignment="Bottom" Margin="200, 0, 0, 60">
+			<Text Value="전체에게" Alignment="Center" Color="#ffffff" />
+			<LinearGradient>
+				<GradientStop Offset="0" Color="#0B614B" />
+				<GradientStop Offset="1" Color="#088A68" />
+			</LinearGradient>
+		</Rectangle>
+		<Rectangle Width="30%" Height="40" Color="#0B614B" Alignment="Bottom" CornerRadius="15" Margin="-30, 0, 0, 60">
+			<Text Value="원하는 사람에게" Margin="0, 0, 0, 0" Alignment="Center" Color="#fff" Clicked="{Select}" />
+			<LinearGradient>
+				<GradientStop Offset="0" Color="#0B614B" />
+				<GradientStop Offset="1" Color="#088A68" />
+			</LinearGradient>
+		</Rectangle>
+		<Rectangle Width="23%" Height="40" Color="#0B614B" Alignment="BottomRight" CornerRadius="15" Margin="0, 0, 45, 10">
+			<Text Value="Next" Alignment="Center" FontSize="17" Color="#ffffff" Clicked="{Back}" />
+			<LinearGradient>
+				<GradientStop Offset="0" Color="#0B614B" />
+				<GradientStop Offset="1" Color="#088A68" />
+			</LinearGradient>
+			<Shadow />
+		</Rectangle>
+		<Rectangle Width="23%" Height="40" CornerRadius="15" Alignment="Bottom" Margin="-5, 0, 0, 10">
+			<Text Value="Back" Color="#ffffff" Alignment="Center" Clicked="{Back}" />
+			<LinearGradient>
+				<GradientStop Offset="0" Color="#0B614B" />
+				<GradientStop Offset="1" Color="#088A68" />
+			</LinearGradient>
+		</Rectangle>
+	</ClientPanel>
+</Page>

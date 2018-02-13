@@ -1,0 +1,49 @@
+<Page ux:Class="Sign" Color="#01DFA5">
+	<Router ux:Dependency="router" />
+	<JavaScript File="..\controller\Sign.js" />
+
+	<ClientPanel Height="730">
+		<StackPanel>
+			<Panel>
+				<Image File="..\Asset\Login.jpg" StretchMode="UniformToFill" Layer="Layout" Margin="0, 45, 0, 0" />
+			</Panel>
+			<Text Value="Sign Up" FontSize="27" Alignment="Center" Margin="0, 25, 0, 0" Color="#ffffff" />
+			<Rectangle Width="85%" Margin="0, 50, 0, 0">
+				<Text Value="School" FontSize="22" Color="#ffffff" />
+				<TextInput PlaceholderColor="#737171" TextColor="#000000" PlaceholderText="School" Width="75%" Alignment="BottomRight" TextAlignment="Center" Layer="Overlay">
+					<Rectangle Width="100%" Height="3" Color="#ffffff" Alignment="Bottom" />
+				</TextInput>
+			</Rectangle>
+			<Rectangle Width="85%" Margin="0, 15, 0, 0">
+				<Text Value="Birth" FontSize="22" Color="#ffffff" Margin="12, 0, 0, 0" />
+				<TextInput Width="75%" Alignment="BottomRight" PlaceholderColor="#737171" TextColor="#000000" PlaceholderText="Birth (ex : 01)" TextAlignment="Center" Layer="Overlay">
+					<Rectangle Width="100%" Height="3" Color="#ffffff" Alignment="Bottom" />
+				</TextInput>
+			</Rectangle>
+			<Rectangle Width="85%" Margin="0, 15, 0, 0">
+				<Text Value="Name" FontSize="22" Color="#ffffff" Margin="5, 0, 0, 0" />
+				<TextInput Width="75%" Alignment="BottomRight" PlaceholderColor="#737171" TextColor="#000000" PlaceholderText="Name" TextAlignment="Center" Layer="Overlay">
+					<Rectangle Width="100%" Height="3" Color="#ffffff" Alignment="Bottom" />
+				</TextInput>
+			</Rectangle>
+			<Rectangle Width="85%" Margin="0, 15, 0, 0">
+				<Text Value="ID" FontSize="22" Color="#ffffff" Margin="23, 0, 0, 0" />
+				<TextInput Width="75%" Alignment="BottomRight" PlaceholderColor="#737171" TextColor="#000000" PlaceholderText="ID" TextAlignment="Center" Layer="Overlay">
+					<Rectangle Width="100%" Height="3" Color="#ffffff" Alignment="Bottom" />
+				</TextInput>
+			</Rectangle>
+			<Rectangle Width="85%" Margin="0, 15, 0, 0">
+				<Text Value="PW" FontSize="22" Color="#ffffff" Margin="15, 0, 0, 0" />
+				<TextInput Width="75%" Alignment="BottomRight" PlaceholderColor="#737171" TextColor="#000000" PlaceholderText="PW" TextAlignment="Center" Layer="Overlay">
+					<Rectangle Width="100%" Height="3" Alignment="Bottom" Color="#ffffff" />
+				</TextInput>
+			</Rectangle>
+			<Rectangle Color="#088A68" Width="23%" Height="40" CornerRadius="15" Margin="0, 15, 30, 0" Alignment="CenterRight">
+				<Text Value="Sign Up" Clicked="{Login}" Alignment="Center" Color="#ffffff" Margin="0, 0, 0, 0" />
+			</Rectangle>
+			<Rectangle Width="23%" Height="40" Color="#088A68" CornerRadius="15" Alignment="Top" Margin="35, -40, 0, 0">
+				<Text Value="Back" Alignment="Center" Color="#ffffff" Clicked="{Login}" />
+			</Rectangle>
+		</StackPanel>
+	</ClientPanel>
+</Page>

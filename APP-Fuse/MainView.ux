@@ -1,0 +1,17 @@
+<App>
+	<Router ux:Name="router" />
+	<ClientPanel>
+		<Navigator DefaultPath="Splash">
+			<Splash ux:Template="Splash" router="router" />
+			<Main ux:Template="Main" router="router" />
+			<Login ux:Template="Login" router="router" Margin="0, 0, 0, 0" />
+			<Sign ux:Template="Sign" router="router" />
+			<Option ux:Template="Option" router="router" />
+			<Add ux:Template="Add" router="router" />
+			<SelectPeople ux:Template="SelectPeople" router="router" Alignment="Default">
+				<Shadow />
+			</SelectPeople>
+			<MainScreen ux:Template="MainScreen" router="router" />
+ 		</Navigator>
+	</ClientPanel>
+</App>

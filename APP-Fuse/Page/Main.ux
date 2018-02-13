@@ -1,0 +1,63 @@
+<Page ux:Class="Main" Alignment="VerticalCenter">
+	<Router ux:Dependency="router" />
+	<JavaScript File="..\controller\Main.js" />
+	<JavaScript File="..\controller\a.js" />
+
+	<Rectangle ux:Class="Article" Height="175" Margin="0, 5, 0, 0" Color="#EFFBF8">
+		<Text Value="{from}   &gt;  김건" Color="#000000" Alignment="TopLeft" Margin="75, 23, 0, 0" FontSize="18" />
+		<Rectangle Width="85%" Height="0.5%" Color="#A4A4A4" Margin="20, 0, 0, 35" Alignment="CenterLeft" />
+		<Rectangle Height="30%" Width="13%" Alignment="TopLeft" Margin="10, 10, 0, 0">
+			<Image Alignment="Default" Margin="0, 0, 0, 0" File="..\Asset\Profile_one.png" StretchMode="UniformToFill" />
+		</Rectangle>
+		<Rectangle Alignment="Top" Height="1" Color="#E6E6E6">
+			<Shadow Angle="360" />
+		</Rectangle>
+		<Rectangle Alignment="CenterLeft" Width="90%" Height="50%" Margin="20, 40, 0, 0">
+			<Text Color="#000000" Value="{contents}" />
+		</Rectangle>
+		<Shadow />
+	</Rectangle>
+
+	<ClientPanel>
+		<Rectangle Color="#0B3B39" Height="7%" Alignment="Top">
+			<Rectangle Width="18%" Height="70%" Color="#0B614B" CornerRadius="15" Alignment="CenterLeft" Margin="10, 0, 0, 0">
+				<Text Alignment="Center" Color="#ffffff" Value="Log Out" Clicked="{Logout}" />
+			</Rectangle>
+			<Shadow />
+			<Text Value="대구소프트웨어고등학교" Alignment="Center" Margin="0, 0, 0, 0" Color="#ffffff" />
+		</Rectangle>
+		<ScrollView Alignment="Top" Margin="0, 50, 0, 0" Height="630">
+			<StackPanel>
+				<Rectangle Height="175" Margin="0, 5, 0, 0" Color="#EFFBF8">
+					<Image Layer="Background" StretchMode="UniformToFill" File="..\Asset\lock.png" />
+					<Rectangle Alignment="Top" Height="1" Color="#E6E6E6">
+						<Shadow Angle="360" />
+					</Rectangle>
+					<Rectangle Width="25%" Height="23%" Alignment="BottomRight" Margin="0, 0, 20, 20" Color="#0B3B39" CornerRadius="15">
+						<Text Value="나도 볼래 !" FontSize="18" Alignment="Center" Color="#ffffff" />
+					</Rectangle>
+					<Text Alignment="Center" Value="남현욱님 외 5명에게만 공개된 비밀입니다." Color="#ffffff" FontSize="20" />
+					<Shadow />
+				</Rectangle>
+				<Each Items="{dataSource}">
+					<Article />
+				</Each>
+				
+			</StackPanel>
+		</ScrollView>
+		<Rectangle Color="#0B3B39" Height="8%" Alignment="Bottom" Layer="Overlay">
+			<Text Value="Option" Alignment="CenterLeft" Margin="75, 0, 0, 0" Color="#ffffff">
+				<Rectangle Width="50" Height="5" Color="#fff">
+					<Rotation Degrees="-45" />
+				</Rectangle>
+				<Rectangle Color="#fff" Width="50" Height="5">
+					<Rotation Degrees="45" />
+				</Rectangle>
+			</Text>
+			<Rectangle Color="#ffffff" Width="0.4%" Alignment="Default">
+				<Rotation Degrees="45.378" />
+			</Rectangle>
+			<Text Margin="0, 0, 75, 0" Value="Add" Alignment="CenterRight" Color="#ffffff" Clicked="{Add}" />
+		</Rectangle>
+	</ClientPanel>
+</Page>

@@ -1,0 +1,11 @@
+<Page ux:Class="Splash">
+	<Router ux:Dependency="router" />
+	<JavaScript File="..\controller\Splash.js" />
+	<Image File="..\Asset\Splash.jpg" StretchMode="UniformToFill" Layer="Background" />
+	<ClientPanel>
+		<Rectangle Width="75%" Height="0.2%" Color="#ffffff" Alignment="Center" Dock="Bottom" Margin="0, 0, 0, 30">
+			<Text Value="Click To Start" Alignment="Center" Color="#ffffff" Layer="Overlay" Margin="0, 0, 0, 0" FontSize="18" />
+		</Rectangle>
+		<Text Clicked="{Start}" Value="Open Secret at Graduation" Alignment="BottomCenter" Color="#ffffff" FontSize="18" />
+	</ClientPanel>
+</Page>

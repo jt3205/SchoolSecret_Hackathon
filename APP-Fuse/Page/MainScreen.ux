@@ -1,0 +1,24 @@
+<Page ux:Class="MainScreen">
+	<Router ux:Dependency="router" />
+
+	<ClientPanel>
+	<StackPanel>
+		<Image File="..\Asset\logo.png" Width="128" Height="128" Alignment="TopCenter" Margin="0, 40, 0, 120" />
+		<Grid Margin="0, 0, 0, 0" Alignment="Default">
+			<Rectangle Color="#fff" Height="45" MinWidth="200" Width="80%" Margin="0, 0, 0, 0" CornerRadius="2" Alignment="Top">
+				<Shadow Color="#666" Size="2" Distance="3" Angle="90" />
+				<TextInput PlaceholderText="ID" Margin="15, 0, 0, 0" PlaceholderColor="#777" />
+			</Rectangle>
+			<Rectangle Color="#fff" Height="45" MinWidth="200" Width="80%" Margin="0, 30, 0, 0" CornerRadius="2" Alignment="Top">
+				<Shadow Color="#666" Size="2" Distance="3" Angle="90" />
+				<TextInput Margin="15, 0, 0, 0" PlaceholderText="PW" PlaceholderColor="#777" />
+			</Rectangle>
+			<Rectangle Width="80%" Alignment="Top" Margin="0, 90, 0, 0" MinWidth="200" Height="45" CornerRadius="30" ux:Name="myRectangle" Color="#D64A2B">
+				<Shadow Color="#000" Size="2" Distance="3" Angle="90" />
+				<Text Value="로그인" Alignment="Center" TextColor="#fff" />
+			</Rectangle>
+		</Grid>
+	</StackPanel>
+	<Image File="..\Asset\bg.jpg" StretchMode="UniformToFill" Alignment="Center" Dock="Fill" />
+</ClientPanel>
+</Page>

@@ -1,0 +1,9 @@
+<Page ux:Class="Option">
+	<Router ux:Dependency="router" />
+
+	<ClientPanel>
+		<StackPanel>
+
+		</StackPanel>
+	</ClientPanel>
+</Page>

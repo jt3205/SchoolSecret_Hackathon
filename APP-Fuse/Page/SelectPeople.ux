@@ -1,0 +1,39 @@
+<Page ux:Class="SelectPeople" Color="#fff">
+	<Router ux:Dependency="router" />
+	<JavaScript File="..\controller\SelectPeople.js" />
+
+	<ClientPanel>
+		<StackPanel>
+			<Rectangle Color="#0B3B39" Alignment="Top" Height="55">
+				<Text Value="Back" Alignment="CenterLeft" Color="#fff" Margin="15, 0, 0, 0" FontSize="17" TextAlignment="Center" Layer="Overlay" Clicked="{Back}"/>
+				<Text FontSize="17" Value="OK" Alignment="CenterRight" Color="#fff" Margin="0, 0, 15, 0" Layer="Overlay" Clicked="{Back}"/>
+				<Text Alignment="Center" Color="#fff" Value="졸업하는 비밀 친구" FontSize="18">
+					<Shadow Angle="360" Size="15" />
+				</Text>
+			</Rectangle>
+			<ScrollView Height="630">
+				<StackPanel>
+					<Rectangle Color="#088A68" Height="75">
+						<Image Width="50" Height="50" File="..\Asset\Profile_one.png" Alignment="CenterLeft" Margin="25, 0, 0, 0" />
+						<Text Value="김 건" Alignment="Center" Color="#fff" FontSize="20" Margin="0, 0, 180, 0" />
+						<Button Alignment="CenterRight" Margin="0, 0, 40, 0" Color="#04B486" Width="40" Height="40">
+							<Rectangle Width="50%" Height="5" Color="#fff" />
+							<Rectangle Width="50%" Height="5" Color="#fff">
+								<Rotation Degrees="-90.756" />
+							</Rectangle>
+						</Button>
+					</Rectangle>
+					<Rectangle Height="75" Color="#088A68" Margin="0, 5, 0, 0" />
+					<Rectangle Height="75" Color="#088A68" Margin="0, 5, 0, 0" />
+					<Rectangle Color="#088A68" Height="75" Margin="0, 5, 0, 0" />
+					<Rectangle Color="#088A68" Height="75" Margin="0, 5, 0, 0" />
+					<Rectangle Color="#088A68" Height="75" Margin="0, 5, 0, 0" />
+					<Rectangle Color="#088A68" Height="75" Margin="0, 5, 0, 0" />
+					<Rectangle Color="#088A68" Height="75" Margin="0, 5, 0, 0" />
+					<Rectangle Color="#088A68" Height="75" Margin="0, 5, 0, 0" />
+					<Rectangle Color="#088A68" Height="75" Margin="0, 5, 0, 0" />
+				</StackPanel>
+			</ScrollView>
+		</StackPanel>
+	</ClientPanel>
+</Page>

@@ -1,0 +1,37 @@
+<Page ux:Class="Login" Color="#01DFA5">
+	<Router ux:Dependency="router" />
+	<JavaScript File="..\controller\Login.js" />
+	<ClientPanel Height="730">
+		<StackPanel>
+			<Panel>
+				<Image File="..\Asset\Login.jpg" StretchMode="UniformToFill" Layer="Layout" Margin="0, 40, 0, 0" />
+			</Panel>
+			<Text Value="Login" Color="#ffffff" Alignment="TopCenter" FontSize="27" Margin="0, 25, 0, 0" />
+			<Image File="..\Asset\logo.png" Width="70" Height="70" Margin="0, 10, 0, 0" />
+			<Rectangle Alignment="Default" Margin="0, 50, 0, 0" Width="85%">
+				<Text Color="#ffffff" FontSize="22" Margin="0, 0, 0, 0" Value="School" />
+				<TextInput Margin="0, 0, 0, 0" Width="75%" Alignment="BottomRight" TextAlignment="Center" PlaceholderColor="#737171" TextColor="#000000" PlaceholderText="School" Layer="Overlay">
+					<Rectangle Width="100%" Height="3" Color="#fff" Alignment="BottomRight" />
+				</TextInput>
+			</Rectangle>
+			<Rectangle Width="85%" Margin="0, 20, 0, 0">
+				<Text Value="ID" Color="#ffffff" FontSize="22" Margin="25, 0, 0, 0" />
+				<TextInput Alignment="BottomRight" Width="75%" TextColor="#000000" PlaceholderText="ID" TextAlignment="Center" PlaceholderColor="#737171" Layer="Overlay">
+					<Rectangle Width="100%" Height="3" Color="#ffffff" Alignment="Bottom" />
+				</TextInput>
+			</Rectangle>
+			<Rectangle Width="85%" Margin="0, 20, 0, 0">
+				<Text Value="PW" Color="#ffffff" FontSize="22" Margin="20, 0, 0, 0" />
+				<TextInput Width="75%" Alignment="BottomRight" PlaceholderColor="#737171" TextAlignment="Center" TextColor="#000000" PlaceholderText="PW" Layer="Overlay">
+					<Rectangle Color="#ffffff" Width="100%" Height="3" Alignment="Bottom" />
+				</TextInput>
+			</Rectangle>
+			<Rectangle Width="23%" Height="40" CornerRadius="15" Alignment="CenterRight" Margin="0, 20, 30, 0" Color="#088A68">
+				<Text Value="Login" Alignment="Center" Color="#ffffff" Clicked="{Main}" />
+			</Rectangle>
+			<Rectangle Width="23%" Height="40" Color="#088A68" CornerRadius="15" Margin="55, -40, 0, 0">
+				<Text Value="Sign up" Alignment="Center" Color="#ffffff" Clicked="{Sign}" />
+			</Rectangle>
+		</StackPanel>
+	</ClientPanel>
+</Page>
